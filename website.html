@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <div class="backGround">
+        <link rel="stylesheet" href="design.css">
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <img class="image" src="61cc84b94710b10019c77960.webp" alt="User Image" width="250 pixels"
+                height="250 pixels"><br>
+            <h1 class="name"> Omer Shafiq </h1>
+            <h2 class="discription">Solidity Developer</h2>
+            <!-- <h2 class="moreDiscription">Bachelors in Computer Science</h2> -->
+            <h2 class="contactMe">Contact Me:</h2>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="main"><br><br>
+            <h1 class="heading1"> ABOUT OMER </h1>
+            <P class="paragraph">I Am High Spirited Solidity Developer With The Three Years Of Experience In Development
+                Of Solidity. I Am Trying To Make A Positive Impact On Society By Contributing Whatever I Can <br><br>
+                I Have A Good Problem Solving Sklls And I Never Got Distracted From What I Want To Achive. <br>
+                When I Am Not Working I Play Or Watch Football, Watch Anime, Read Manga, Draw Sketches And Prefere To
+                Spend Time With My Family And Friends. I Believe In Determination & Always Try To Keep Myself On Path
+            </P><br><br>
+            <div class="container">
+                <button class="button button-on" onclick="toggleOnLED()">Soft Skills</button>
+                <button class="button button-off" onclick="toggleOffLED()">Hard Skills</button>
+            </div>
+
+            <!-- JavaScript Button function -->
+            <script>
+                function toggleOnLED() {
+                    var button = document.querySelector(".button-on");
+                    var otherButton = document.querySelector(".button-off");
+                    if (button.classList.contains("button-active")) {
+                        button.classList.remove("button-active");
+                        button.textContent = "Hard Skills";
+                    }
+                    else {
+                        button.classList.add("button-active");
+                        button.textContent = "Soft Skills";
+                        otherButton.classList.remove("button-active");
+                        otherButton.textContent = "Hard Skills";
+                    }
+                }
+
+                function toggleOffLED() {
+                    var button = document.querySelector(".button-off");
+                    var otherButton = document.querySelector(".button-on");
+                    if (button.classList.contains("button-active")) {
+                        button.classList.remove("button-active");
+                        button.textContent = "Soft Skills";
+                    }
+                    else {
+                        button.classList.add("button-active");
+                        button.textContent = "Soft Skills";
+                        otherButton.classList.remove("button-active");
+                        otherButton.textContent = "Hard Skills";
+                    }
+                }
+            </script><br><br><br>
+            <h1 class="heading1">PROFESSIONAL EXPERIENCE</h1>
+            <p class="subheading"> <b>Computer Engineer, Software Engineer. (2023-2027)</b> </p>
+            <p class="paragraph"> Versatile, Enterprising, Dynamic, Enthusiastic, And Open-minded Solidity Developer
+                With Over Three Years Of Experience In Metaverse , Smart Contract & Stack Development. I Had Worked With
+                Great Companies And Start-ups And Also Contributed To Wholesome Projects </p>
+            <P class="subheading"><b>Software Developer, Web3 Organization (2025-present)</b></P>
+            <P class="paragraph">Currently Working Over Smart Contract As An Efficient, Productive, And Creative Team
+                Player And
+                Accomplished Installation, Testing And Targeted Performance</P><br><br><br><br>
+        </div>
+</body>
+
+</html>
